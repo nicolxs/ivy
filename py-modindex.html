@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Python Module Index &mdash; Ivy 1.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="icon" type="image/png" href="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/ivy_logo_only.png?raw=true">
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -43,14 +44,16 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="design.html">Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="related_work.html">Related Work</a></li>
 <li class="toctree-l1"><a class="reference internal" href="extensions.html">Extensions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="roadmap.html">Roadmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="deep_dive.html">Deep Dive</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Functions</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="functional/experimental.html">Experimental</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/activations.html">Activations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/compilation.html">Compilation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/constants.html">Constants</a></li>
@@ -61,7 +64,7 @@
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/general.html">General</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/gradients.html">Gradients</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="functional/ivy/linear_algebra.html">Linear algebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functional/ivy/linalg.html">Linalg</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/losses.html">Losses</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/manipulation.html">Manipulation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/meta.html">Meta</a></li>
@@ -74,16 +77,21 @@
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/statistical.html">Statistical</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/utility.html">Utility</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Classes</span></p>
+<p class="caption" role="heading"><span class="caption-text">Data Classes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="stateful/activations.html">Activations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stateful/converters.html">Converters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stateful/initializers.html">Initializers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stateful/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stateful/module.html">Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stateful/norms.html">Norms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_classes/array.html">Array</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_classes/container.html">Container</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Framework Classes</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="stateful/optimizers.html">Optimizers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stateful/sequential.html">Sequential</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/norms.html">Norms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/activations.html">Activations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/initializers.html">Initializers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/converters.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/module.html">Module</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docs</span></p>
 <ul>
@@ -141,12 +149,587 @@
      <tr class="cg-1">
        <td></td>
        <td>&#160;&#160;&#160;
+       <a href="_version.html#module-ivy._version"><code class="xref">ivy._version</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/activations.html#module-ivy.array.activations"><code class="xref">ivy.array.activations</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/array.html#module-ivy.array.array"><code class="xref">ivy.array.array</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/conversions.html#module-ivy.array.conversions"><code class="xref">ivy.array.conversions</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/creation.html#module-ivy.array.creation"><code class="xref">ivy.array.creation</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/data_type.html#module-ivy.array.data_type"><code class="xref">ivy.array.data_type</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/device.html#module-ivy.array.device"><code class="xref">ivy.array.device</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/elementwise.html#module-ivy.array.elementwise"><code class="xref">ivy.array.elementwise</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental.html#module-ivy.array.experimental"><code class="xref">ivy.array.experimental</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/activations.html#module-ivy.array.experimental.activations"><code class="xref">ivy.array.experimental.activations</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/array_methods.html#module-ivy.array.experimental.array_methods"><code class="xref">ivy.array.experimental.array_methods</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/conversions.html#module-ivy.array.experimental.conversions"><code class="xref">ivy.array.experimental.conversions</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/creation.html#module-ivy.array.experimental.creation"><code class="xref">ivy.array.experimental.creation</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/data_type.html#module-ivy.array.experimental.data_type"><code class="xref">ivy.array.experimental.data_type</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/device.html#module-ivy.array.experimental.device"><code class="xref">ivy.array.experimental.device</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/elementwise.html#module-ivy.array.experimental.elementwise"><code class="xref">ivy.array.experimental.elementwise</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/general.html#module-ivy.array.experimental.general"><code class="xref">ivy.array.experimental.general</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/gradients.html#module-ivy.array.experimental.gradients"><code class="xref">ivy.array.experimental.gradients</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/image.html#module-ivy.array.experimental.image"><code class="xref">ivy.array.experimental.image</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/layers.html#module-ivy.array.experimental.layers"><code class="xref">ivy.array.experimental.layers</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/linalg.html#module-ivy.array.experimental.linalg"><code class="xref">ivy.array.experimental.linalg</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/losses.html#module-ivy.array.experimental.losses"><code class="xref">ivy.array.experimental.losses</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/manipulation.html#module-ivy.array.experimental.manipulation"><code class="xref">ivy.array.experimental.manipulation</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/norms.html#module-ivy.array.experimental.norms"><code class="xref">ivy.array.experimental.norms</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/random.html#module-ivy.array.experimental.random"><code class="xref">ivy.array.experimental.random</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/searching.html#module-ivy.array.experimental.searching"><code class="xref">ivy.array.experimental.searching</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/set.html#module-ivy.array.experimental.set"><code class="xref">ivy.array.experimental.set</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/sorting.html#module-ivy.array.experimental.sorting"><code class="xref">ivy.array.experimental.sorting</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/statistical.html#module-ivy.array.experimental.statistical"><code class="xref">ivy.array.experimental.statistical</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/experimental/utility.html#module-ivy.array.experimental.utility"><code class="xref">ivy.array.experimental.utility</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/general.html#module-ivy.array.general"><code class="xref">ivy.array.general</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/gradients.html#module-ivy.array.gradients"><code class="xref">ivy.array.gradients</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/image.html#module-ivy.array.image"><code class="xref">ivy.array.image</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/layers.html#module-ivy.array.layers"><code class="xref">ivy.array.layers</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/linalg.html#module-ivy.array.linalg"><code class="xref">ivy.array.linalg</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/losses.html#module-ivy.array.losses"><code class="xref">ivy.array.losses</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/manipulation.html#module-ivy.array.manipulation"><code class="xref">ivy.array.manipulation</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/norms.html#module-ivy.array.norms"><code class="xref">ivy.array.norms</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/random.html#module-ivy.array.random"><code class="xref">ivy.array.random</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/searching.html#module-ivy.array.searching"><code class="xref">ivy.array.searching</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/set.html#module-ivy.array.set"><code class="xref">ivy.array.set</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/sorting.html#module-ivy.array.sorting"><code class="xref">ivy.array.sorting</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/statistical.html#module-ivy.array.statistical"><code class="xref">ivy.array.statistical</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/utility.html#module-ivy.array.utility"><code class="xref">ivy.array.utility</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/array/wrapping.html#module-ivy.array.wrapping"><code class="xref">ivy.array.wrapping</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="assertions.html#module-ivy.assertions"><code class="xref">ivy.assertions</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
        <a href="backend_handler.html#module-ivy.backend_handler"><code class="xref">ivy.backend_handler</code></a></td><td>
        <em></em></td></tr>
      <tr class="cg-1">
        <td></td>
        <td>&#160;&#160;&#160;
+       <a href="data_classes/container/activations.html#module-ivy.container.activations"><code class="xref">ivy.container.activations</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/base.html#module-ivy.container.base"><code class="xref">ivy.container.base</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/container.html#module-ivy.container.container"><code class="xref">ivy.container.container</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/conversions.html#module-ivy.container.conversions"><code class="xref">ivy.container.conversions</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/creation.html#module-ivy.container.creation"><code class="xref">ivy.container.creation</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/data_type.html#module-ivy.container.data_type"><code class="xref">ivy.container.data_type</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/device.html#module-ivy.container.device"><code class="xref">ivy.container.device</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/elementwise.html#module-ivy.container.elementwise"><code class="xref">ivy.container.elementwise</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental.html#module-ivy.container.experimental"><code class="xref">ivy.container.experimental</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/activations.html#module-ivy.container.experimental.activations"><code class="xref">ivy.container.experimental.activations</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/container_methods.html#module-ivy.container.experimental.container_methods"><code class="xref">ivy.container.experimental.container_methods</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/conversions.html#module-ivy.container.experimental.conversions"><code class="xref">ivy.container.experimental.conversions</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/creation.html#module-ivy.container.experimental.creation"><code class="xref">ivy.container.experimental.creation</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/data_type.html#module-ivy.container.experimental.data_type"><code class="xref">ivy.container.experimental.data_type</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/device.html#module-ivy.container.experimental.device"><code class="xref">ivy.container.experimental.device</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/elementwise.html#module-ivy.container.experimental.elementwise"><code class="xref">ivy.container.experimental.elementwise</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/general.html#module-ivy.container.experimental.general"><code class="xref">ivy.container.experimental.general</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/gradients.html#module-ivy.container.experimental.gradients"><code class="xref">ivy.container.experimental.gradients</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/image.html#module-ivy.container.experimental.image"><code class="xref">ivy.container.experimental.image</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/layers.html#module-ivy.container.experimental.layers"><code class="xref">ivy.container.experimental.layers</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/linalg.html#module-ivy.container.experimental.linalg"><code class="xref">ivy.container.experimental.linalg</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/losses.html#module-ivy.container.experimental.losses"><code class="xref">ivy.container.experimental.losses</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/manipulation.html#module-ivy.container.experimental.manipulation"><code class="xref">ivy.container.experimental.manipulation</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/norms.html#module-ivy.container.experimental.norms"><code class="xref">ivy.container.experimental.norms</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/random.html#module-ivy.container.experimental.random"><code class="xref">ivy.container.experimental.random</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/searching.html#module-ivy.container.experimental.searching"><code class="xref">ivy.container.experimental.searching</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/set.html#module-ivy.container.experimental.set"><code class="xref">ivy.container.experimental.set</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/sorting.html#module-ivy.container.experimental.sorting"><code class="xref">ivy.container.experimental.sorting</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/statistical.html#module-ivy.container.experimental.statistical"><code class="xref">ivy.container.experimental.statistical</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/experimental/utility.html#module-ivy.container.experimental.utility"><code class="xref">ivy.container.experimental.utility</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/general.html#module-ivy.container.general"><code class="xref">ivy.container.general</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/gradients.html#module-ivy.container.gradients"><code class="xref">ivy.container.gradients</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/image.html#module-ivy.container.image"><code class="xref">ivy.container.image</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/layers.html#module-ivy.container.layers"><code class="xref">ivy.container.layers</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/linalg.html#module-ivy.container.linalg"><code class="xref">ivy.container.linalg</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/losses.html#module-ivy.container.losses"><code class="xref">ivy.container.losses</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/manipulation.html#module-ivy.container.manipulation"><code class="xref">ivy.container.manipulation</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/norms.html#module-ivy.container.norms"><code class="xref">ivy.container.norms</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/random.html#module-ivy.container.random"><code class="xref">ivy.container.random</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/searching.html#module-ivy.container.searching"><code class="xref">ivy.container.searching</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/set.html#module-ivy.container.set"><code class="xref">ivy.container.set</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/sorting.html#module-ivy.container.sorting"><code class="xref">ivy.container.sorting</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/statistical.html#module-ivy.container.statistical"><code class="xref">ivy.container.statistical</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/utility.html#module-ivy.container.utility"><code class="xref">ivy.container.utility</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/wrapping.html#module-ivy.container.wrapping"><code class="xref">ivy.container.wrapping</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
        <a href="func_wrapper.html#module-ivy.func_wrapper"><code class="xref">ivy.func_wrapper</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental.html#module-ivy.functional.experimental"><code class="xref">ivy.functional.experimental</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/activations.html#module-ivy.functional.experimental.activations"><code class="xref">ivy.functional.experimental.activations</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/compilation.html#module-ivy.functional.experimental.compilation"><code class="xref">ivy.functional.experimental.compilation</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/constants.html#module-ivy.functional.experimental.constants"><code class="xref">ivy.functional.experimental.constants</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/creation.html#module-ivy.functional.experimental.creation"><code class="xref">ivy.functional.experimental.creation</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/data_type.html#module-ivy.functional.experimental.data_type"><code class="xref">ivy.functional.experimental.data_type</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/device.html#module-ivy.functional.experimental.device"><code class="xref">ivy.functional.experimental.device</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/elementwise.html#module-ivy.functional.experimental.elementwise"><code class="xref">ivy.functional.experimental.elementwise</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/general.html#module-ivy.functional.experimental.general"><code class="xref">ivy.functional.experimental.general</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/gradients.html#module-ivy.functional.experimental.gradients"><code class="xref">ivy.functional.experimental.gradients</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/layers.html#module-ivy.functional.experimental.layers"><code class="xref">ivy.functional.experimental.layers</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/linalg.html#module-ivy.functional.experimental.linalg"><code class="xref">ivy.functional.experimental.linalg</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/losses.html#module-ivy.functional.experimental.losses"><code class="xref">ivy.functional.experimental.losses</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/manipulation.html#module-ivy.functional.experimental.manipulation"><code class="xref">ivy.functional.experimental.manipulation</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/meta.html#module-ivy.functional.experimental.meta"><code class="xref">ivy.functional.experimental.meta</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/nest.html#module-ivy.functional.experimental.nest"><code class="xref">ivy.functional.experimental.nest</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/norms.html#module-ivy.functional.experimental.norms"><code class="xref">ivy.functional.experimental.norms</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/random.html#module-ivy.functional.experimental.random"><code class="xref">ivy.functional.experimental.random</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/searching.html#module-ivy.functional.experimental.searching"><code class="xref">ivy.functional.experimental.searching</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/set.html#module-ivy.functional.experimental.set"><code class="xref">ivy.functional.experimental.set</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/sorting.html#module-ivy.functional.experimental.sorting"><code class="xref">ivy.functional.experimental.sorting</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/sparse_array.html#module-ivy.functional.experimental.sparse_array"><code class="xref">ivy.functional.experimental.sparse_array</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/statistical.html#module-ivy.functional.experimental.statistical"><code class="xref">ivy.functional.experimental.statistical</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="functional/experimental/utility.html#module-ivy.functional.experimental.utility"><code class="xref">ivy.functional.experimental.utility</code></a></td><td>
        <em></em></td></tr>
      <tr class="cg-1">
        <td></td>
@@ -201,7 +784,7 @@
      <tr class="cg-1">
        <td></td>
        <td>&#160;&#160;&#160;
-       <a href="functional/ivy/linear_algebra.html#module-ivy.functional.ivy.linear_algebra"><code class="xref">ivy.functional.ivy.linear_algebra</code></a></td><td>
+       <a href="functional/ivy/linalg.html#module-ivy.functional.ivy.linalg"><code class="xref">ivy.functional.ivy.linalg</code></a></td><td>
        <em></em></td></tr>
      <tr class="cg-1">
        <td></td>
@@ -266,6 +849,11 @@
      <tr class="cg-1">
        <td></td>
        <td>&#160;&#160;&#160;
+       <a href="stateful.html#module-ivy.stateful"><code class="xref">ivy.stateful</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
        <a href="stateful/activations.html#module-ivy.stateful.activations"><code class="xref">ivy.stateful.activations</code></a></td><td>
        <em></em></td></tr>
      <tr class="cg-1">
@@ -318,7 +906,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2020, Ivy Team.</p>
+    <p>&#169; Copyright 2020-2022, Ivy Team.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

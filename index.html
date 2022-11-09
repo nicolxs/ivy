@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contents &mdash; Ivy 1.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="icon" type="image/png" href="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/ivy_logo_only.png?raw=true">
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -42,14 +43,16 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="design.html">Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="related_work.html">Related Work</a></li>
 <li class="toctree-l1"><a class="reference internal" href="extensions.html">Extensions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="roadmap.html">Roadmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="deep_dive.html">Deep Dive</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Functions</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="functional/experimental.html">Experimental</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/activations.html">Activations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/compilation.html">Compilation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/constants.html">Constants</a></li>
@@ -60,7 +63,7 @@
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/general.html">General</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/gradients.html">Gradients</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="functional/ivy/linear_algebra.html">Linear algebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functional/ivy/linalg.html">Linalg</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/losses.html">Losses</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/manipulation.html">Manipulation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/meta.html">Meta</a></li>
@@ -73,16 +76,21 @@
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/statistical.html">Statistical</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/utility.html">Utility</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Classes</span></p>
+<p class="caption" role="heading"><span class="caption-text">Data Classes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="stateful/activations.html">Activations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stateful/converters.html">Converters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stateful/initializers.html">Initializers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stateful/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stateful/module.html">Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stateful/norms.html">Norms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_classes/array.html">Array</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_classes/container.html">Container</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Framework Classes</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="stateful/optimizers.html">Optimizers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stateful/sequential.html">Sequential</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/norms.html">Norms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/activations.html">Activations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/initializers.html">Initializers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/converters.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/module.html">Module</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docs</span></p>
 <ul>
@@ -122,8 +130,8 @@
            <div itemprop="articleBody">
              
   <embed>
-  <a href="https://github.com/unifyai/ivy"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa000.png"></a>
-</embed><a class="reference internal image-reference" href="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/repos/ivy/logo.png?raw=true"><img alt="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/repos/ivy/logo.png?raw=true" src="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/repos/ivy/logo.png?raw=true" style="width: 100%;" /></a>
+  <a href="https://github.com/unifyai/ivy"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+</embed><a class="reference internal image-reference" href="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/logo.png?raw=true"><img alt="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/logo.png?raw=true" src="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/logo.png?raw=true" style="width: 100%;" /></a>
 <br/>
 <div align="center">
 <a href="https://github.com/unifyai/ivy/issues">
@@ -147,7 +155,7 @@
 <a href="https://github.com/unifyai/ivy/actions?query=workflow%3Atest-ivy">
     <img style="float: left; padding-right: 4px; padding-bottom: 4px;" src="https://img.shields.io/github/workflow/status/unifyai/ivy/test-ivy?label=tests">
 </a>
-<a href="https://discord.gg/G4aR9Q7DTN">
+<a href="https://discord.gg/sXyFF8tDtm">
     <img style="float: left; padding-right: 4px; padding-bottom: 4px;" src="https://img.shields.io/discord/799879767196958751?color=blue&label=%20&logo=discord&logoColor=white">
 </a>
 </div>
@@ -183,13 +191,12 @@
 <li><p><a class="reference internal" href="#background">Background</a></p></li>
 <li><p><a class="reference internal" href="#design">Design</a></p></li>
 <li><p><a class="reference internal" href="#extensions">Extensions</a></p></li>
-<li><p><a class="reference internal" href="#roadmap">Roadmap</a></p></li>
 <li><p><a class="reference external" href="https://lets-unify.ai/ivy/contributing.html">Contributing</a></p></li>
 </ul>
 </section>
 <section id="overview">
 <h1>Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h1>
-<p>Ivy is an ML framework that currently supports JAX, TensorFlow, PyTorch, MXNet, and Numpy.
+<p>Ivy is an ML framework that currently supports JAX, TensorFlow, PyTorch, and Numpy.
 We’re very excited for you to try it out!</p>
 <p>Next on our roadmap is to support automatic code conversions between all frameworks 🔄,
 and add instant multi-framework support for all open-source libraries with only a few lines of code changed!
@@ -205,10 +212,7 @@ and check out our Google <a class="reference external" href="https://drive.googl
 Expect breaking changes and sharp edges until we release version 1.2.0 in the next few weeks!</p>
 <p>If you would like to contribute,
 please check out our <a class="reference external" href="https://lets-unify.ai/ivy/contributing.html">contributor guide</a>,
-and take a look at the <a class="reference external" href="https://lets-unify.ai/ivy/contributing/4_open_tasks.html">open tasks</a> if you’d like to dive straight in! 🧑‍💻</p>
-<p>If you’d like to ask us questions, feel free to join in on any of our weekly “Ask us Anything!” online sessions!
-To see when the next one will be, check out the Events tab at the top left our
-<a class="reference external" href="https://discord.gg/G4aR9Q7DTN">discord server</a> 🙂</p>
+and take a look at the <a class="reference external" href="https://lets-unify.ai/ivy/contributing/open_tasks.html">open tasks</a> if you’d like to dive straight in! 🧑‍💻</p>
 </section>
 <section id="quick-start">
 <h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this heading"></a></h1>
@@ -245,14 +249,13 @@ You can immediately use Ivy to train a neural network, using your favorite frame
 </pre></div>
 </div>
 <p>This example uses PyTorch as a backend framework,
-but the backend can easily be changed to your favorite frameworks, such as TensorFlow, JAX, or MXNet.</p>
+but the backend can easily be changed to your favorite frameworks, such as TensorFlow, or JAX.</p>
 <p><strong>Framework Agnostic Functions</strong></p>
 <p>In the example below we show how Ivy’s concatenation function is compatible with tensors from different frameworks.
 This is the same for ALL Ivy functions. They can accept tensors from any framework and return the correct result.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">jax.numpy</span> <span class="k">as</span> <span class="nn">jnp</span>
 <span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">mxnet</span> <span class="k">as</span> <span class="nn">mx</span>
 <span class="kn">import</span> <span class="nn">torch</span>
 
 <span class="kn">import</span> <span class="nn">ivy</span>
@@ -260,7 +263,6 @@ This is the same for ALL Ivy functions. They can accept tensors from any framewo
 <span class="n">jax_concatted</span>   <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">concat</span><span class="p">((</span><span class="n">jnp</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">1</span><span class="p">,)),</span> <span class="n">jnp</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">1</span><span class="p">,))),</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">tf_concatted</span>    <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">concat</span><span class="p">((</span><span class="n">tf</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">1</span><span class="p">,)),</span> <span class="n">tf</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">1</span><span class="p">,))),</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">np_concatted</span>    <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">concat</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">1</span><span class="p">,)),</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">1</span><span class="p">,))),</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">mx_concatted</span>    <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">concat</span><span class="p">((</span><span class="n">mx</span><span class="o">.</span><span class="n">nd</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">1</span><span class="p">,)),</span> <span class="n">mx</span><span class="o">.</span><span class="n">nd</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">1</span><span class="p">,))),</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">torch_concatted</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">concat</span><span class="p">((</span><span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">1</span><span class="p">,)),</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">1</span><span class="p">,))),</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -328,12 +330,12 @@ You should then see output like the following:</p>
 <div class="line"><br /></div>
 <div class="line">The Ivy codebase can then be split into three categories, and can be further split into 8 distinct submodules, each of which falls into one of these three categories as follows:</div>
 </div>
-<a class="reference internal image-reference" href="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/submodule_dependency_graph.png?raw=true"><img alt="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/submodule_dependency_graph.png?raw=true" class="align-center" src="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/submodule_dependency_graph.png?raw=true" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/design/submodule_dependency_graph.png?raw=true"><img alt="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/design/submodule_dependency_graph.png?raw=true" class="align-center" src="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/design/submodule_dependency_graph.png?raw=true" style="width: 100%;" /></a>
 <div class="line-block">
 <div class="line">(a) <a class="reference external" href="https://lets-unify.ai/ivy/design/building_blocks.html">Building Blocks</a></div>
-<div class="line">Back-end functional APIs ✅</div>
+<div class="line">Backend functional APIs ✅</div>
 <div class="line">Ivy functional API ✅</div>
-<div class="line">Framework Handler ✅</div>
+<div class="line">Backend Handler ✅</div>
 <div class="line">Ivy Compiler 🚧</div>
 <div class="line"><br /></div>
 <div class="line">(b) <a class="reference external" href="https://lets-unify.ai/ivy/design/ivy_as_a_transpiler.html">Ivy as a Transpiler</a></div>
@@ -355,28 +357,11 @@ You should then see output like the following:</p>
 <div class="line"><code class="code docutils literal notranslate"><span class="pre">ivy.Trainer</span></code>, <code class="code docutils literal notranslate"><span class="pre">ivy.Dataset</span></code>, <code class="code docutils literal notranslate"><span class="pre">ivy.Dataloader</span></code> and other helpful classes and functions for creating training workflows in only a few lines of code</div>
 </div>
 </section>
-<section id="roadmap">
-<h1>Roadmap<a class="headerlink" href="#roadmap" title="Permalink to this heading"></a></h1>
-<div class="line-block">
-<div class="line">We strongly welcome and encourage contributions from the community as we take on this important journey towards ML framework unification. These posts will explain exactly how you can get involved 🙂</div>
-<div class="line"><br /></div>
-<div class="line">(a) <strong>Standardize [page coming soon!]</strong> 🚧</div>
-<div class="line">Align Ivy with the <a class="reference external" href="https://data-apis.org">Consortium for Python Data API Standards</a></div>
-<div class="line"><br /></div>
-<div class="line">(b) <strong>Front-Ends [page coming soon!]</strong> 🚧</div>
-<div class="line">Create backend-specific front-ends for each supported ML framework</div>
-<div class="line"><br /></div>
-<div class="line">(c) <strong>Transpiler [page coming soon!]</strong> 🚧</div>
-<div class="line">Verify code conversions work for each back-end and front-end combo</div>
-<div class="line"><br /></div>
-<div class="line">(d) <strong>Ecosystem [page coming soon!]</strong> 🚧</div>
-<div class="line">Add multi-framework support to popular repos with a few lines changed</div>
-</div>
-</section>
 <section id="contributing">
 <h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this heading"></a></h1>
 <p>Join our community as a code contributor, and help accelerate our journey to unify all ML frameworks!
-Find out more in our <a class="reference external" href="https://lets-unify.ai/ivy/contributing.html">Contributing</a> guide!</p>
+Check out all of our open tasks, and find out more info in our
+<a class="reference external" href="https://lets-unify.ai/ivy/contributing.html">Contributing</a> guide!</p>
 </section>
 <section id="citation">
 <h1>Citation<a class="headerlink" href="#citation" title="Permalink to this heading"></a></h1>
@@ -387,6 +372,8 @@ Find out more in our <a class="reference external" href="https://lets-unify.ai/i
   <span class="n">year</span><span class="o">=</span><span class="p">{</span><span class="mi">2021</span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
+</div>
+<div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -408,7 +395,7 @@ Find out more in our <a class="reference external" href="https://lets-unify.ai/i
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2020, Ivy Team.</p>
+    <p>&#169; Copyright 2020-2022, Ivy Team.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

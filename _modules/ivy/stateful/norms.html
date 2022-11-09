@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ivy.stateful.norms &mdash; Ivy 1.0 documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="icon" type="image/png" href="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/ivy_logo_only.png?raw=true">
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -40,14 +41,16 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../background.html">Background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../design.html">Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../related_work.html">Related Work</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../extensions.html">Extensions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../roadmap.html">Roadmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../deep_dive.html">Deep Dive</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../glossary.html">Glossary</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Functions</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../functional/experimental.html">Experimental</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/activations.html">Activations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/compilation.html">Compilation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/constants.html">Constants</a></li>
@@ -58,7 +61,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/general.html">General</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/gradients.html">Gradients</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/linear_algebra.html">Linear algebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/linalg.html">Linalg</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/losses.html">Losses</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/manipulation.html">Manipulation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/meta.html">Meta</a></li>
@@ -71,16 +74,21 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/statistical.html">Statistical</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/utility.html">Utility</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Classes</span></p>
+<p class="caption" role="heading"><span class="caption-text">Data Classes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/activations.html">Activations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/converters.html">Converters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/initializers.html">Initializers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/module.html">Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/norms.html">Norms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../data_classes/array.html">Array</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../data_classes/container.html">Container</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Framework Classes</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../stateful/optimizers.html">Optimizers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../stateful/sequential.html">Sequential</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/norms.html">Norms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/activations.html">Activations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/initializers.html">Initializers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/converters.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/module.html">Module</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docs</span></p>
 <ul>
@@ -132,9 +140,11 @@
 <div class="viewcode-block" id="LayerNorm.__init__"><a class="viewcode-back" href="../../../stateful/norms/LayerNorm.html#ivy.stateful.norms.LayerNorm.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">normalized_shape</span><span class="p">,</span>
-        <span class="n">epsilon</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-        <span class="n">elementwise_affine</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-        <span class="n">new_std</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+        <span class="o">/</span><span class="p">,</span>
+        <span class="o">*</span><span class="p">,</span>
+        <span class="n">epsilon</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">_MIN_BASE</span><span class="p">,</span>
+        <span class="n">elementwise_affine</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="n">new_std</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span>
         <span class="n">device</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
         <span class="n">v</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
         <span class="n">dtype</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
@@ -150,7 +160,7 @@
 <span class="sd">            small constant to add to the denominator,</span>
 <span class="sd">            use global ivy._MIN_BASE by default.</span>
 <span class="sd">        elementwise_affine</span>
-<span class="sd">            Whether to include learnable affine parameters, default is True.</span>
+<span class="sd">            Whether to include learnable affine parameters, default is ``True``.</span>
 <span class="sd">        new_std</span>
 <span class="sd">            The standard deviation of the new normalized values. Default is 1.</span>
 <span class="sd">        device</span>
@@ -164,21 +174,21 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">_epsilon</span> <span class="o">=</span> <span class="n">epsilon</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_elementwise_affine</span> <span class="o">=</span> <span class="n">elementwise_affine</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_new_std</span> <span class="o">=</span> <span class="n">new_std</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_scale_shape</span> <span class="o">=</span> <span class="n">normalized_shape</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_offset_shape</span> <span class="o">=</span> <span class="n">normalized_shape</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_scale_init</span> <span class="o">=</span> <span class="n">Ones</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_offset_init</span> <span class="o">=</span> <span class="n">Zeros</span><span class="p">()</span>
-        <span class="n">Module</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">device</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_weight_shape</span> <span class="o">=</span> <span class="n">normalized_shape</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_bias_shape</span> <span class="o">=</span> <span class="n">normalized_shape</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_weight_init</span> <span class="o">=</span> <span class="n">Ones</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_bias_init</span> <span class="o">=</span> <span class="n">Zeros</span><span class="p">()</span>
+        <span class="n">Module</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">device</span><span class="p">,</span> <span class="n">v</span><span class="o">=</span><span class="n">v</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span></div>
 
     <span class="k">def</span> <span class="nf">_create_variables</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">device</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Create internal variables for the layer&quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_elementwise_affine</span><span class="p">:</span>
             <span class="k">return</span> <span class="p">{</span>
-                <span class="s2">&quot;scale&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_scale_init</span><span class="o">.</span><span class="n">create_variables</span><span class="p">(</span>
-                    <span class="bp">self</span><span class="o">.</span><span class="n">_scale_shape</span><span class="p">,</span> <span class="n">device</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span>
+                <span class="s2">&quot;weight&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_weight_init</span><span class="o">.</span><span class="n">create_variables</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_weight_shape</span><span class="p">,</span> <span class="n">device</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span>
                 <span class="p">),</span>
-                <span class="s2">&quot;offset&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_offset_init</span><span class="o">.</span><span class="n">create_variables</span><span class="p">(</span>
-                    <span class="bp">self</span><span class="o">.</span><span class="n">_offset_shape</span><span class="p">,</span> <span class="n">device</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span>
+                <span class="s2">&quot;bias&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_bias_init</span><span class="o">.</span><span class="n">create_variables</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_bias_shape</span><span class="p">,</span> <span class="n">device</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span>
                 <span class="p">),</span>
             <span class="p">}</span>
         <span class="k">return</span> <span class="p">{}</span>
@@ -196,14 +206,13 @@
 <span class="sd">        -------</span>
 <span class="sd">        ret</span>
 <span class="sd">            The outputs following the layer normalization operation.</span>
-
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">ivy</span><span class="o">.</span><span class="n">layer_norm</span><span class="p">(</span>
             <span class="n">inputs</span><span class="p">,</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_normalized_idxs</span><span class="p">,</span>
             <span class="n">epsilon</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_epsilon</span><span class="p">,</span>
-            <span class="n">scale</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">v</span><span class="o">.</span><span class="n">scale</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_elementwise_affine</span> <span class="k">else</span> <span class="kc">None</span><span class="p">,</span>
-            <span class="n">offset</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">v</span><span class="o">.</span><span class="n">offset</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_elementwise_affine</span> <span class="k">else</span> <span class="kc">None</span><span class="p">,</span>
+            <span class="n">weight</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">v</span><span class="o">.</span><span class="n">weight</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_elementwise_affine</span> <span class="k">else</span> <span class="kc">None</span><span class="p">,</span>
+            <span class="n">bias</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">v</span><span class="o">.</span><span class="n">bias</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_elementwise_affine</span> <span class="k">else</span> <span class="kc">None</span><span class="p">,</span>
             <span class="n">new_std</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_new_std</span><span class="p">,</span>
         <span class="p">)</span></div>
 </pre></div>
@@ -215,7 +224,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2020, Ivy Team.</p>
+    <p>&#169; Copyright 2020-2022, Ivy Team.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

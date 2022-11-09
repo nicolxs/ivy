@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>nested_any &mdash; Ivy 1.0 documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="icon" type="image/png" href="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/ivy_logo_only.png?raw=true">
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -43,14 +44,16 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../background.html">Background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../design.html">Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../related_work.html">Related Work</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../extensions.html">Extensions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../roadmap.html">Roadmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../deep_dive.html">Deep Dive</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../glossary.html">Glossary</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Functions</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../experimental.html">Experimental</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../activations.html">Activations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../compilation.html">Compilation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">Constants</a></li>
@@ -61,7 +64,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../general.html">General</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../gradients.html">Gradients</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../linear_algebra.html">Linear algebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../linalg.html">Linalg</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../losses.html">Losses</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../manipulation.html">Manipulation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../meta.html">Meta</a></li>
@@ -76,7 +79,7 @@
 <li class="toctree-l2"><a class="reference internal" href="set_nest_at_indices.html">set_nest_at_indices</a></li>
 <li class="toctree-l2"><a class="reference internal" href="insert_into_nest_at_indices.html">insert_into_nest_at_indices</a></li>
 <li class="toctree-l2"><a class="reference internal" href="map_nest_at_indices.html">map_nest_at_indices</a></li>
-<li class="toctree-l2"><a class="reference internal" href="nested_indices_where.html">nested_indices_where</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nested_argwhere.html">nested_argwhere</a></li>
 <li class="toctree-l2"><a class="reference internal" href="all_nested_indices.html">all_nested_indices</a></li>
 <li class="toctree-l2"><a class="reference internal" href="map.html">map</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nested_map.html">nested_map</a></li>
@@ -93,16 +96,21 @@
 <li class="toctree-l1"><a class="reference internal" href="../statistical.html">Statistical</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../utility.html">Utility</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Classes</span></p>
+<p class="caption" role="heading"><span class="caption-text">Data Classes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/activations.html">Activations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/converters.html">Converters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/initializers.html">Initializers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/module.html">Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/norms.html">Norms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../data_classes/array.html">Array</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../data_classes/container.html">Container</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Framework Classes</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../stateful/optimizers.html">Optimizers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../stateful/sequential.html">Sequential</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/norms.html">Norms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/activations.html">Activations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/initializers.html">Initializers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/converters.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/module.html">Module</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docs</span></p>
 <ul>
@@ -155,7 +163,7 @@ to True, else False.</p>
 <li><p><strong>nest</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code>) – The nest to check the leaves of.</p></li>
 <li><p><strong>fn</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code>) – The conditon function, returning True or False.</p></li>
 <li><p><strong>check_nests</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>) – Whether to also check the nests for the condition, not only nest leaves. (default: <code class="docutils literal notranslate"><span class="pre">False</span></code>)
-Default is False.</p></li>
+Default is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
 <li><p><strong>_base</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>) – Whether the current function call is the first function call in the recursive (default: <code class="docutils literal notranslate"><span class="pre">True</span></code>)
 stack. Used internally, do not set manually.</p></li>
 </ul>
@@ -187,7 +195,7 @@ stack. Used internally, do not set manually.</p></li>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2020, Ivy Team.</p>
+    <p>&#169; Copyright 2020-2022, Ivy Team.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
